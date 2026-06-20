@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: backend
+  datasource:
+    url: jdbc:postgresql://localhost:5050/club_deportivo_db
+    username: postgres
+    password: jack
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+jwt:
+  secret: TU_CLAVE_SECRETA_SUPER_LARGA_DE_MINIMO_32_CARACTERES
+  expiration: 86400000
